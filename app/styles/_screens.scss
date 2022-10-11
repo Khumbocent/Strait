@@ -135,9 +135,7 @@ footer p {
 
 // for tablets
 @media screen and (max-width: 800px) {
-  .row {
-    text-align: left;
-  }
+  
 
   .nav__bar nav {
     visibility: hidden;
@@ -172,9 +170,7 @@ footer p {
   .mav__bar {
     display: none;
   }
-  .row {
-    text-align: center;
-  }
+
   #my-goal .col-2 img {
     display: none;
   }
@@ -214,7 +210,7 @@ footer p {
   #skills .row {
     display: block;
   }
-  #skills .row .col-4{
+  #skills .row .col-4 {
     width: 80%;
     margin: 20px auto;
   }
