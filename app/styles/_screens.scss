@@ -21,9 +21,10 @@ footer {
   display: inline-block;
   margin-right: 30px;
 }
-.col-2 h1 {
+.col-2 h1, .desc {
   font-size: 50px;
   color: #8892b0;
+  font-weight: bold;
 }
 .nav__bar ul li a:hover {
   background-color: lightcyan;
@@ -47,9 +48,7 @@ footer {
   margin-bottom: 50px;
   flex-basis: auto;
 }
-.col-2 p {
-  margin-bottom: 30px;
-}
+
 
 // column number 2 comprising the about information
 .col-3 {
@@ -58,14 +57,16 @@ footer {
   box-shadow: 0 0 1px #fff;
   padding: 6px 15px;
   margin-bottom: 15px;
-  border-radius: 20px;
+  border-radius: 15px;
+  min-width: 200px;
+  
 }
 // my skills section
 .col-4 img {
   max-width: 50%;
 }
 .col-4 {
-  flex-basis: 20%;
+  flex-basis: 25%;
   text-align: center;
   box-shadow: 0 0 1px #fff;
   margin-bottom: 20px;
@@ -82,7 +83,6 @@ footer {
 }
 
 #my-goal {
-  box-shadow: 0 0 1px #fff;
   background: radial-gradient(#ffd6d6, #ffd6d6);
   align-items: center;
 }
@@ -134,8 +134,10 @@ footer p {
 }
 
 // for tablets
-@media screen and (max-width: 800px) {
-  
+@media screen and (max-width: 900px) {
+  .row {
+    text-align: left;
+  }
 
   .nav__bar nav {
     visibility: hidden;
@@ -157,6 +159,7 @@ footer p {
   .col-3 {
     flex-basis: 100%;
   }
+  
 }
 
 // for mobile screens
@@ -170,13 +173,17 @@ footer p {
   .mav__bar {
     display: none;
   }
-
+  .row {
+    text-align: center;
+  }
   #my-goal .col-2 img {
     display: none;
   }
+ 
   #my-goal .col-2,
   .col-3 {
     flex-basis: 100%;
+    color: #fff;
   }
   .col-2 img {
     padding: 20px;
@@ -184,7 +191,7 @@ footer p {
   }
 
   #form {
-    width: 90%;
+    width: 100%;
     margin: 30px auto;
   }
   #form input {
@@ -210,8 +217,18 @@ footer p {
   #skills .row {
     display: block;
   }
-  #skills .row .col-4 {
-    width: 80%;
+  #skills .row .col-4{
+    width: 100%;
     margin: 20px auto;
+  }
+  .nav__bar{
+    margin-bottom: 0;
+  }
+  #my-goal{
+    background:#0a192f;
+    
+  }
+  #my-goal .title{
+    color: #8892b0;
   }
 }
