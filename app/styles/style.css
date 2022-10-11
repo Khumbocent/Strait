@@ -105,7 +105,8 @@ footer {
   margin-right: 30px;
 }
 
-.col-2 h1, .desc {
+.col-2 h1,
+.desc {
   font-size: 50px;
   color: #8892b0;
   font-weight: bold;
@@ -148,6 +149,13 @@ footer {
   margin-bottom: 15px;
   border-radius: 15px;
   min-width: 200px;
+}
+
+#my-goal .col-2 p {
+  -webkit-box-shadow: 0 0 1px #fff;
+          box-shadow: 0 0 1px #fff;
+  padding: 10px;
+  color: #0a192f;
 }
 
 .col-4 img {
@@ -270,6 +278,12 @@ footer p {
   footer {
     max-width: 108%;
     margin: auto;
+  }
+  h1 {
+    text-align: left;
+  }
+  .col-2 a {
+    float: left;
   }
   .mav__bar {
     display: none;
