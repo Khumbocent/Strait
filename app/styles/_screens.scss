@@ -1,0 +1,221 @@
+// navigation menu for big screens
+header,
+main,
+footer {
+  max-width: 1300px;
+  margin: auto;
+  padding: 20px;
+}
+
+// navigation section of the page
+.nav__bar {
+  display: flex;
+  margin-bottom: 100px;
+}
+.nav__bar nav {
+  flex: 1;
+  text-align: right;
+}
+.nav__bar ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 30px;
+}
+.col-2 h1 {
+  font-size: 50px;
+  color: #8892b0;
+}
+.nav__bar ul li a:hover {
+  background-color: lightcyan;
+  color: #000000;
+  transition: 0.5s;
+}
+.nav__bar ul li a {
+  border: 1px solid #fff;
+  padding: 6px 10px;
+  border-radius: 6px;
+}
+// hiding the menu icon on small larg screen
+.menu {
+  display: none;
+}
+
+// first column of the big screen, title and user image
+.col-2 {
+  min-width: 300px;
+  padding: 10px;
+  margin-bottom: 50px;
+  flex-basis: auto;
+}
+.col-2 p {
+  margin-bottom: 30px;
+}
+
+// column number 2 comprising the about information
+.col-3 {
+  flex-basis: 30%;
+  align-items: center;
+  box-shadow: 0 0 1px #fff;
+  padding: 6px 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+// my skills section
+.col-4 img {
+  max-width: 50%;
+}
+.col-4 {
+  flex-basis: 20%;
+  text-align: center;
+  box-shadow: 0 0 1px #fff;
+  margin-bottom: 20px;
+  padding: 5px;
+}
+// my goal section
+#my-goal .col-2 {
+  flex-basis: 50%;
+  align-items: center;
+  padding: 10px;
+}
+#my-goal .col-2 img {
+  max-width: 100%;
+}
+
+#my-goal {
+  box-shadow: 0 0 1px #fff;
+  background: radial-gradient(#ffd6d6, #ffd6d6);
+  align-items: center;
+}
+#my-goal .title {
+  color: black;
+}
+
+// form section
+#form {
+  width: 60%;
+  margin: auto;
+}
+label {
+  display: none;
+}
+#form input {
+  height: 40px;
+  width: 100%;
+  text-indent: 6px;
+  font-size: 18px;
+}
+textarea,
+#user-message {
+  height: 200px;
+  resize: none;
+  width: 100%;
+  text-indent: 6px;
+  font-size: 14px;
+  font-size: 18px;
+}
+#form .btn:hover {
+  background-color: red;
+  color: white;
+}
+// footer section
+footer ul li {
+  display: inline-block;
+  list-style-type: none;
+  margin-right: 30px;
+}
+footer {
+  box-shadow: 0 0 1px #fff;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+footer p {
+  text-align: center;
+  font-weight: bold;
+}
+
+// for tablets
+@media screen and (max-width: 800px) {
+  .row {
+    text-align: left;
+  }
+
+  .nav__bar nav {
+    visibility: hidden;
+  }
+  header {
+    width: 95%;
+    margin: auto;
+  }
+  .col-2 h1 {
+    font-size: 40px;
+  }
+  .menu {
+    display: block;
+  }
+  #my-goal .col-2 img {
+    display: none;
+  }
+  #my-goal .col-2,
+  .col-3 {
+    flex-basis: 100%;
+  }
+}
+
+// for mobile screens
+@media screen and (max-width: 600px) {
+  header,
+  main,
+  footer {
+    max-width: 108%;
+    margin: auto;
+  }
+  .mav__bar {
+    display: none;
+  }
+  .row {
+    text-align: center;
+  }
+  #my-goal .col-2 img {
+    display: none;
+  }
+  #my-goal .col-2,
+  .col-3 {
+    flex-basis: 100%;
+  }
+  .col-2 img {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  #form {
+    width: 90%;
+    margin: 30px auto;
+  }
+  #form input {
+    height: 40px;
+    width: 100%;
+    text-indent: 6px;
+    font-size: 18px;
+  }
+  textarea,
+  #user-message {
+    height: 200px;
+    resize: none;
+    width: 100%;
+    text-indent: 6px;
+    font-size: 14px;
+    font-size: 18px;
+  }
+  footer ul li {
+    display: block;
+    list-style-type: none;
+    text-align: center;
+  }
+  #skills .row {
+    display: block;
+  }
+  #skills .row .col-4{
+    width: 80%;
+    margin: 20px auto;
+  }
+}
