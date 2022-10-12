@@ -61,7 +61,6 @@ footer {
   min-width: 200px;
 }
 #my-goal .col-2 p {
-  box-shadow: 0 0 1px #fff;
   padding: 10px;
   color: #0a192f;
 }
@@ -175,16 +174,18 @@ footer p {
     margin: auto;
   }
   h1 {
-    text-align: left;
+    width: 100%;
+    margin: auto;
+    font-size: 30px;
+    margin-bottom: 10px;
   }
-  .col-2 a{
-    float: left;
-  }
+  
   .mav__bar {
     display: none;
   }
   .row {
     text-align: center;
+    
   }
   #my-goal .col-2 img {
     display: none;
