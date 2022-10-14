@@ -166,8 +166,15 @@ footer {
   text-align: center;
   -webkit-box-shadow: 0 0 1px #fff;
           box-shadow: 0 0 1px #fff;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding: 5px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.col-4:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 #my-goal .col-2 {
