@@ -289,6 +289,10 @@ footer p {
   #my-goal .col-2 img {
     display: none;
   }
+  .row {
+    text-align: center;
+    font-size: medium;
+  }
   #my-goal .col-2,
   .col-3 {
     -ms-flex-preferred-size: 100%;

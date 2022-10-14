@@ -148,6 +148,7 @@ footer p {
     width: 100%;
     margin: auto;
   }
+  
 
   //  menu for small screen
   .menu {
@@ -187,6 +188,10 @@ footer p {
   //  setting all the content to fit tje screen
   #my-goal .col-2 img {
     display: none;
+  }
+  .row{
+    text-align: center;
+    font-size: medium;
   }
   #my-goal .col-2,
   .col-3 {
