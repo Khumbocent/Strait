@@ -22,7 +22,7 @@
           />
         </a>
         <nav>
-          <ul>
+          <ul id="menu__items">
             <li><a href="index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
@@ -30,12 +30,12 @@
             <li><a href="#form">Contact</a></li>
           </ul>
         </nav>
-        <img class="menu" src="/app/images/menu.png" alt="" width="25px"; height="25px">
+        <img onclick="menu__toggle()" class="menu" src="/app/images/menu.png" alt="" width="25px"; height="25px">
       </div>
       <ul></ul>
 
       <!-- heading and image of the developer  -->
-      <div class="row">
+      <section id="heading"><div class="row">
         <div class="col-2">
             <small style="color: white;">hi! my i'm</small>
             <h1>Khumbo Strait. <br>
@@ -45,7 +45,8 @@
         <div class="col-2">
             <img src="/app/images/khumbo.jpg" alt="khumbo">
         </div>
-      </div>
+      </div></section>
+      
     </header>
 
     <!-- main section ? -->
@@ -175,6 +176,7 @@
         </footer>
       
     </main>
+    <button id="btn"></button>
 
     <!-- js part  -->
     <script src="/app/script/script.js"></script>
