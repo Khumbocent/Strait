@@ -11,20 +11,43 @@ function menu__toggle() {
     }
     else {
         menu__items.style.maxHeight = "0px";
-    }
-    
+    }   
 }
 
 
-var btn = document.getElementById("btn");
+// variables of the button 
+var backtotop = document.getElementById("back-to-top"),
+    body = document.body,
+    docElem = document.documentElement,
+    offset = 100,
+    scrolpos, docHeight;
 
-// btn.addEventListener("click", function (event) {
-//     alert("hey i have been clicked");
-// }
-// );
- 
-btn.addEventListener("click", message);
-function message(event) {
-    prompt("hey put your name here");
-};
+// calculating the document height 
+docHeight = Math.max(body.scrollHeight, body.offsetHeight, docElem.clientHeight, docElem.scrollHeight, docElem.offsetHeight);
+if (docHeight != "undefined") {
+    offset = docHeight / 4;
+}
+
+// listen to scroll event 
+window.addEventListener("scroll", showButton());
+
+// get the scroll position 
+scrolpos = body.scrollTop || docElem.scrollTop;
+
+// set the class name visible to the button 
+function showButton(event) {
+    
+    if (scrolpos > offset) {
+        backtotop.className = "visible"
+    } 
+    else {
+        backtotop.className = "";
+    }   
+}
+
+
+
+
+
+
 

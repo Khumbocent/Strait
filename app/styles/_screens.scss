@@ -120,6 +120,7 @@ textarea,
   text-indent: 6px;
   font-size: 14px;
   font-size: 18px;
+  margin-bottom: 20px;
 }
 #form .btn:hover {
   background-color: red;
@@ -141,7 +142,30 @@ footer p {
   font-weight: bold;
 }
 
+// the back to top button 
+#back-to-top{
+  position: fixed;
+  font-weight: bold;
+  cursor: pointer;
+  bottom: 3em;
+  right: 3em;
+  background-color: red;
+  color: #333;
+  padding: 1em;
+  transition: 0.5s;
+  opacity: 0;
+  display: inline-block;
+  border: none;
 
+}
+#back-to-top:hover{
+  background-color: rgb(136, 73, 73);
+  padding: 1em 3em;
+  
+}
+#back-to-top .visible{
+  opacity:1;
+}
 // for tablets
 @media screen and (max-width: 900px) {
   // setting the row  and all containersto take 100% of the screen width
