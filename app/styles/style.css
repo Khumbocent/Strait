@@ -411,5 +411,8 @@ footer p {
   .nav__bar {
     margin-bottom: 0;
   }
+  #back-to-top:hover {
+    padding: 1em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
