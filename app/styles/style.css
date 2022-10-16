@@ -253,26 +253,25 @@ footer p {
 
 #back-to-top {
   position: fixed;
-  font-weight: bold;
-  cursor: pointer;
-  bottom: 3em;
-  right: 3em;
-  background-color: red;
-  color: #333;
   padding: 1em;
+  cursor: pointer;
+  display: inline-block;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  background-color: #0a192f;
+  right: 3em;
+  bottom: 3em;
+  color: #fff;
   opacity: 0;
-  display: inline-block;
-  border: none;
+  font-weight: bold;
+  border: 1px solid #fff;
 }
 
 #back-to-top:hover {
-  background-color: #884949;
   padding: 1em 3em;
 }
 
-#back-to-top .visible {
+#back-to-top.visible {
   opacity: 1;
 }
 
