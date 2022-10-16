@@ -16,7 +16,7 @@ function menu__toggle() {
 
 
 // variables of the button 
-var backtotop = document.getElementById("back-to-top"),
+var btt = document.getElementById("back-to-top"),
     body = document.body,
     docElem = document.documentElement,
     offset = 100,
@@ -28,23 +28,21 @@ if (docHeight != "undefined") {
     offset = docHeight / 4;
 }
 
-// listen to scroll event 
-window.addEventListener("scroll", showButton());
+// another event listener 
+window.addEventListener("scroll", visible);
 
-// get the scroll position 
-scrolpos = body.scrollTop || docElem.scrollTop;
+// add the class name visible to the button 
+function visible() {
+     scrolpos = body.scrollTop || docElem.scrollTop;
 
-// set the class name visible to the button 
-function showButton(event) {
-    
     if (scrolpos > offset) {
-        backtotop.className = "visible"
-    } 
+        btt.className = "visible";
+    }
     else {
-        backtotop.className = "";
-    }   
+        btt.className = ""
+    }
+    
 }
-
 
 
 
