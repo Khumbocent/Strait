@@ -340,6 +340,9 @@ footer p {
   #form {
     margin-bottom: 30px;
   }
+  #back-to-top:hover {
+    padding: 1em;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -410,9 +413,6 @@ footer p {
   }
   .nav__bar {
     margin-bottom: 0;
-  }
-  #back-to-top:hover {
-    padding: 1em;
   }
 }
 /*# sourceMappingURL=style.css.map */

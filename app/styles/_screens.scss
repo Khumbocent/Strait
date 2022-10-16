@@ -232,6 +232,9 @@ footer p {
   #form {
     margin-bottom: 30px;
   }
+    #back-to-top:hover {
+  padding: 1em ;
+}
 }
 
 // for mobile screens
@@ -309,7 +312,5 @@ footer p {
   .nav__bar {
     margin-bottom: 0;
   }
-  #back-to-top:hover {
-  padding: 1em ;
-}
+
 }
